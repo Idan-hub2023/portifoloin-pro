@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="log.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact us.css">
+    <title>IDan_dev/contact us</title>
+</head>
+<body id="body">
+    <h1 id="word" style="text-align: center; align-items: center; justify-content: center; color: gold;">CONTACT US</h1>
+    <div class="contein">
+        <div class="img">
+            <img src="pho1.jpg" alt="" class="slide">
+        </div>
+        <div class="contact">
+            <h2 style="color:gold;" id="word">USE THIS SOCIAL MEDIA TO SEE ME</h2>
+            <img src="ter.png" alt="" class="ter">
+            <div class="cont">
+                .tel:250 788645676
+                <div class="our_social">
+                    <img src="2021_Facebook_icon.svg.webp" alt="" class="face">
+                    <h3>.stack_2034</h3>
+                    <img src="instagram_4138124.png" alt="" class="inst">
+                    <h3>.stack_developer_2034</h3>
+                    <img src="whatsapp_3670051.png" alt="" class="what">
+                    <h3>.tel:250 0786545323</h3>
+                    <img src="twitter_5969020.png" alt="" class="twitter">
+                    <h3>.stack_developer_2034</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="word">
+        <h2 id="word">this is my own is my profetional i'am developer</h2>
+    </div>
+   <div class="sett">
+    <img src="Settings_512px.png" alt="" class="sett" onclick="show()">
+    <div class="button" id="sett">
+        <input type="radio" name="butt" id="" onclick="white()">white
+        <input type="radio" name="butt" id="" onclick="dark()">dark
+    </div>
+   </div>
+    <script>
+        function white() {
+            var back=document.getElementById('body');
+            var content=document.getElementById('word');
+             
+            back.style.backgroundColor="white";
+            back.style.color="black"
+            back.style.color="black"
+       
+           
+        }
+        function dark() {
+            var back=document.getElementById('body');
+            var word=document.getElementById('word');
+             
+            back.style.backgroundColor="black";
+            back.style.color="white"
+            content.style.color="white"
+       
+           
+        }
+        function show() {
+            document.getElementById('sett').style.display="flex"
+
+            setTimeout(() => {
+                document.getElementById('sett').style.display="none"
+
+            }, 7000);
+        }
+   
+    </script>
+</body>
+</html>

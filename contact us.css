@@ -1,0 +1,116 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    text-transform: capitalize;
+    
+}
+.slide{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 23%;
+    border-radius: 300px;   
+}
+.face{
+    width: 50px;
+    height: 50px;
+    transition: 2s;
+    border: dotted rgb(0, 8, 255);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 2s;
+}
+.face:hover{
+    transform: scale(1.20);
+    margin-left: 30px;
+}
+.inst{
+    width: 50px;
+    height: 50px;
+    transition: 2s;
+    border: dotted rgb(255, 47, 47);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 2s;
+}
+.inst:hover{
+    transform: scale(1.20);
+    margin-left: 30px;
+}
+.what{
+    width: 50px;
+    height: 50px;
+    transition: 2s;
+    border: dotted rgb(55, 255, 0);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 2s;
+}
+.what:hover{
+    transform: scale(1.20);
+    margin-left: 30px;
+}
+.twitter{
+    width: 50px;
+    height: 50px;
+    transition: 2s;
+    border: dotted gold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 2s; 
+}
+.twitter:hover{
+    transform: scale(1.20);
+    margin-left: 30px;
+}
+.contein{
+    display: flex;
+}
+.contact{
+    font-size: 15px;
+    margin-left: 30%;
+}
+.ter{
+    height: 40px;
+    width: 40px;
+    transition: 2s; 
+}
+.ter:hover{
+    transform: scale(1.20);
+    margin-left: 30px;
+}
+.word
+{
+    margin-left: 50px;
+    color: gold;
+    animation: mov 2s linear forwards;
+}
+@keyframes mov {
+    0%{
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+.contein{
+    margin-top: 7%;
+}
+.sett{
+    height: 30px;
+    width: 30px;
+    margin-left: 87%;
+}
+.button{
+    display:flex;
+    padding: 20px;
+    justify-content: space-between;
+    height: 30px;
+    width: 120px;
+    border:3px groove gold;
+    border-radius: 20px;
+    display: none;
+}

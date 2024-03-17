@@ -1,0 +1,25 @@
+ body{
+    font-size: 15px;
+    color: white;
+    background-color: rgb(42, 41, 41);
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .slide{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top:13%;
+    border-radius: 300px;
+    border: dotted gold;
+}
+.content{
+    display: flex;
+}
+.about{
+    margin-left:20%;
+}
+h1{
+    color: gold;
+    text-shadow: 0px 0px 20px gold;
+}

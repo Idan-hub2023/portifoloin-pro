@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="username" required>
+        <br>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br>
+        <textarea id="message" name="message" placeholder="write your  Message" required></textarea>
+        <br>
+        <input type="submit" value="send" class="send">
+      </form>
+     <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get form data
+  var formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  };
+
+  // Send email using EmailJS
+  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+    .then(function(response) {
+      alert("Email sent successfully!");
+      // Optionally, clear the form fields
+      document.getElementById("contactForm").reset();
+    }, function(error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send email. Please try again later.");
+    });
+});
+
+     </script>  
+</body>
+</html>
